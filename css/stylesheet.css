@@ -1,0 +1,90 @@
+/* ヘッダー */
+header {
+  height:80px;
+}
+nav {
+  text-align:center;
+}
+footer {
+  float:right;
+}
+article {
+  overflow: hidden;
+}
+.top_header {
+  background-color:blue;
+  color:white;
+  padding:5px;
+}
+.header {
+  background-color:aqua;
+  color:white;
+  padding:5px;
+}
+.like h2 {
+  border-style:solid;
+  border-width:1px;
+  color:blue;
+}
+.dislike h2 {
+  border-style:solid;
+  border-width:1px;
+  color:red;
+}
+/* スライドショー */
+.flexslider {
+  height:300px;
+  margin:auto;
+  overflow:hidden;
+  width:500px;
+}
+.flexslider .slides img {
+  margin-left:auto;
+  margin-right:auto;
+  max-height:300px;
+  width:auto;
+}
+/* 関連サイトへのリンクボタン */
+.linksite {
+  width:100px;
+}
+/* お知らせ */
+#information {
+  color:blue;
+}
+/* アニメーション */
+.pict {
+  background: url(../img/neko.png) no-repeat 0 0; 
+  height: 111px; 
+  margin: 5px auto; 
+  width: 100px; 
+}
+.anime .pict {
+  /*4秒掛けてplayで指定した間を4段階に分割して無限ループで移動する*/ 
+  -webkit-animation: play 4s steps(4) infinite; /* Safari */
+  animation: play 4s steps(4) infinite;         /* IE */
+}
+@-webkit-keyframes play {                       /* Safari */
+  0% { 
+    background-position: 0px 0px; 
+  }
+  100% {
+    background-position: 0px -400px; 
+  }
+} 
+@keyframes play {                               /* IE */
+  0% {
+    background-position: 0px 0px; 
+  }
+  100% {
+    background-position: 0px -400px; 
+  }
+}
+.rankingbox {
+  overflow:hidden;
+  margin:0,auto;
+}
+.ranking {
+   float:left;
+   margin-right:2em;
+}

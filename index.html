@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- title：おじゃれなホームページ名をつける -->
+  <title>ホームページ名</title>
+  <script src="js\jquery-3.1.0.min.js"></script>
+  <link rel="stylesheet" href="css\flexslider.css" type="text/css">
+  <link rel="stylesheet" href="css\stylesheet.css" type="text/css">
+  <script src="js\jquery.flexslider-min.js"></script>
+  <script charset="UTF-8">
+    $(window).on('load',function() {
+      $('.flexslider').flexslider({animation:"slide"});
+    });
+  </script>
+</head>
+<body>
+    <!-- header：サイトのイントロダクションなどを記述する -->
+    <h1 class="top_header">キャッチフレーズ</h1>
+    <p>
+    </p>
+  </header>
+  <nav>
+    <!-- nav：他のサイトやサイト内へのリンクを記述する -->
+    <input class="linksite" type="button" value="トップ" onclick="location.href='index.html'">
+    <input class="linksite" type="button" value="自己紹介" onclick="location.href='personal.html'">
+    <input class="linksite" type="button" value="趣味" onclick="location.href='hobby.html'">
+  </nav>
+  <article>
+    <!-- section：章や節に相当する部分を記述する（何らかのテーマを持つ） -->
+    <section>
+      <div class="flexslider">
+        <ul class="slides">
+        <!-- この下にスライドショーで表示したい画像を追加する -->
+        <li><img src="img\eikando.jpg" alt="永観堂"></li>
+        <li><img src="img\horyuji.jpg" alt="法隆寺"></li>
+        <li><img src="img\nishihonganji.jpg" alt="西本願寺"></li>
+        </ul>
+      </div>
+    </section>
+  </article>
+  <aside>
+    <h2 id="information">お知らせ</h2>
+    <li>2017/1/16: ジャパニアス株式会社テクノカレッジにて作成</li>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5796.1469463718!2d139.63165316959132!3d35.44391869116762!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185cf17df5fb75%3A0x55d0b61c3a2d4e77!2z44CSMjMxLTAwNDgg56We5aWI5bed55yM5qiq5rWc5biC5Lit5Yy66JOs6I6x55S677yS5LiB55uu77yU4oiS77yRIOaoqua1nOWkp-mAmuOCiuWFrOWckuODk-ODqw!5e0!3m2!1sja!2sjp!4v1483664195481" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </aside>
+  <footer>
+    <!-- 自分の名前(orニックネーム)を記載する(mynameを変更) -->
+    <p>Copyright © 2017 myname All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
