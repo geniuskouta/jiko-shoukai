@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <!-- title：おじゃれなホームページ名をつける -->
   <title>kouta</title>
-  <script src="js\jquery-3.1.0.min.js"></script>
-  <link rel="stylesheet" href="css\flexslider.css" type="text/css">
-  <link rel="stylesheet" href="css\stylesheet.css" type="text/css">
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/lightbox.min.css">
   <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
   <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/script.js"></script>
   <script charset="UTF-8">
     $(window).on('load',function() {
       $('.flexslider').flexslider({animation:"slide"});
@@ -25,8 +26,6 @@
    <li class="active"><a href="index.html">トップ</a></li>
    <li><a href="personal.html">自己紹介</a></li>
    <li><a href="hobby.html">趣味</a></li>
-
-   
   </nav>
   
 
@@ -34,6 +33,10 @@
   </header>
 
   <article>
+    <!-- animation -->
+  <section id="anime">
+  </section>
+ 
     <!-- section：章や節に相当する部分を記述する（何らかのテーマを持つ） -->
     <section>
       <div class="flexslider">
@@ -74,6 +77,13 @@
   <footer>
     <!-- 自分の名前(orニックネーム)を記載する(mynameを変更) -->
     <p>Copyright © 2019 Kouta All Rights Reserved.</p>
+    
+    <script>
+    <!--
+    document.addEventListener('DOMContentLoaded', fallingDrops());
+    //-->
+    </script>
+    
   </footer>
 </body>
 </html>

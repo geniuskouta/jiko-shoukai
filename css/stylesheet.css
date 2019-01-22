@@ -155,3 +155,16 @@ aside {
   color: blue;
 }
 
+
+
+  .drop {
+  background: url(../images/drop.png);
+  height: 32px;
+  width: 32px;
+  left: 1px;
+  top: 1px;
+  position: absolute;
+  z-index: -1;
+  }
+
+
