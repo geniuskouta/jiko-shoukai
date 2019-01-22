@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <!-- title：おじゃれなホームページ名をつける -->
-  <title>ホームページ名</title>
+  <title>kouta</title>
   <script src="js\jquery-3.1.0.min.js"></script>
   <link rel="stylesheet" href="css\flexslider.css" type="text/css">
   <link rel="stylesheet" href="css\stylesheet.css" type="text/css">
-  <script src="js\jquery.flexslider-min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
+  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
   <script charset="UTF-8">
     $(window).on('load',function() {
       $('.flexslider').flexslider({animation:"slide"});
@@ -15,28 +18,52 @@
   </script>
 </head>
 <body>
-    <!-- header：サイトのイントロダクションなどを記述する -->
-    <h1 class="top_header">キャッチフレーズ</h1>
-    <p>
-    </p>
-  </header>
-  <nav>
+
+  <nav class="navbar navbar-inverse">
     <!-- nav：他のサイトやサイト内へのリンクを記述する -->
-    <input class="linksite" type="button" value="トップ" onclick="location.href='index.html'">
-    <input class="linksite" type="button" value="自己紹介" onclick="location.href='personal.html'">
-    <input class="linksite" type="button" value="趣味" onclick="location.href='hobby.html'">
+   
+   <li class="active"><a href="index.html">トップ</a></li>
+   <li><a href="personal.html">自己紹介</a></li>
+   <li><a href="hobby.html">趣味</a></li>
+
+   
   </nav>
+  
+
+
+  </header>
+
   <article>
     <!-- section：章や節に相当する部分を記述する（何らかのテーマを持つ） -->
     <section>
       <div class="flexslider">
         <ul class="slides">
         <!-- この下にスライドショーで表示したい画像を追加する -->
-        <li><img src="img\eikando.jpg" alt="永観堂"></li>
-        <li><img src="img\horyuji.jpg" alt="法隆寺"></li>
-        <li><img src="img\nishihonganji.jpg" alt="西本願寺"></li>
+        <li><img src="images\_8290126.jpg" alt="kouta1"></li>
+        <li><img src="images\wantedlyprof.jpg" alt="kouta2"></li>
+        <li><img src="images\akitak.jpg" alt="kouta3"></li>
         </ul>
       </div>
+    </section>
+    <section>
+
+    <div class="text-center">
+          <h3>中野皓太</h3><p>１９９５年に東京都八王子市に生まれ１８歳までそこで育つ。その後、大学のため秋田県で４年間暮らすことになる。</p>
+    </div>
+    
+    <div class="border">
+    
+  </div>
+    <div class="gallery">
+    <a href="images/red1.jpg" data-lightbox="my-gallery"><img src="images/red1small.jpg"></a>
+    <a href="images/red2.jpg" data-lightbox="my-gallery"><img src="images/red2small.jpg"></a>
+    <a href="images/red3.jpg" data-lightbox="my-gallery"><img src="images/red3small.jpg"></a>
+    <a href="images/red4.jpg" data-lightbox="my-gallery"><img src="images/red4small.jpg"></a>
+    </div>
+
+    <div class="border">
+    
+    </div>
     </section>
   </article>
   <aside>
@@ -46,7 +73,7 @@
   </aside>
   <footer>
     <!-- 自分の名前(orニックネーム)を記載する(mynameを変更) -->
-    <p>Copyright © 2017 myname All Rights Reserved.</p>
+    <p>Copyright © 2019 Kouta All Rights Reserved.</p>
   </footer>
 </body>
 </html>

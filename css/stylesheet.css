@@ -1,36 +1,124 @@
 /* ヘッダー */
 header {
-  height:80px;
+  height:100px;
+  margin-bottom: 50px;
 }
-nav {
-  text-align:center;
+
+div.row {
+  margin: 10px;
+
 }
+
+div.thumbnail:hover{
+  transform: scale(1.05);
+
+}
+
+div.img-circular img{
+
+  border: 1px solid black;
+  border-radius: 50px 50px;
+  margin-left: 5px;
+  margin-right: 10px;
+  float: left;
+ 
+}
+
+div.img-circular img:hover{
+  transform: scale(1.05);
+
+}
+
+
+div.bio{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+} 
+
+nav li {
+  float: left;
+  list-style-type: none;
+}
+
+.active {
+  background-color: #333;
+}  
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+} 
+
+nav li a:hover {
+  background-color: #111;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.gallery {
+  text-align: center;
+/*  margin: 10px 50px; */
+
+}
+
+.gallery img{
+  width: 230px;
+  padding: 5px;
+  filter: grayscale(100%);
+  transition: ls;
+  border-radius: 20px;
+}
+
+.gallery img:hover{
+  filter: grayscale(0);
+  transform: scale(1.05);
+
+}
+
+
 footer {
   float:right;
 }
 article {
   overflow: hidden;
+  margin-top: 10px;
 }
+
+article.blog {
+  line-height: 32px;
+  margin: 15px;
+}
+
 .top_header {
   background-color:blue;
   color:white;
   padding:5px;
+
 }
+
+
 .header {
-  background-color:aqua;
+  background-color: black;
   color:white;
   padding:5px;
+
 }
-.like h2 {
-  border-style:solid;
-  border-width:1px;
-  color:blue;
-}
-.dislike h2 {
-  border-style:solid;
-  border-width:1px;
-  color:red;
-}
+
+
 /* スライドショー */
 .flexslider {
   height:300px;
@@ -46,45 +134,24 @@ article {
 }
 /* 関連サイトへのリンクボタン */
 .linksite {
-  width:100px;
+ * width:100px;
 }
+
+.border{
+   margin: 30px;
+   border-style: dotted solid;
+}
+
+aside li{
+  list-style-type: none;
+}
+
+aside {
+  margin-left: 20px;
+}
+
 /* お知らせ */
 #information {
-  color:blue;
+  color: blue;
 }
-/* アニメーション */
-.pict {
-  background: url(../img/neko.png) no-repeat 0 0; 
-  height: 111px; 
-  margin: 5px auto; 
-  width: 100px; 
-}
-.anime .pict {
-  /*4秒掛けてplayで指定した間を4段階に分割して無限ループで移動する*/ 
-  -webkit-animation: play 4s steps(4) infinite; /* Safari */
-  animation: play 4s steps(4) infinite;         /* IE */
-}
-@-webkit-keyframes play {                       /* Safari */
-  0% { 
-    background-position: 0px 0px; 
-  }
-  100% {
-    background-position: 0px -400px; 
-  }
-} 
-@keyframes play {                               /* IE */
-  0% {
-    background-position: 0px 0px; 
-  }
-  100% {
-    background-position: 0px -400px; 
-  }
-}
-.rankingbox {
-  overflow:hidden;
-  margin:0,auto;
-}
-.ranking {
-   float:left;
-   margin-right:2em;
-}
+

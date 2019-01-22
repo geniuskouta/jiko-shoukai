@@ -4,75 +4,211 @@
   <meta charset="UTF-8">
   <title>自己紹介</title>
   <link rel="stylesheet" href="css\stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
 <body>
-  <header>
-    <!-- header：サイトのイントロダクションなどを記述する -->
-    <h1 class="header">自己紹介</h1>
-  </header>
-  <nav>
+<nav class="navbar navbar-inverse">
     <!-- nav：他のサイトやサイト内へのリンクを記述する -->
+    
+   <li><a href="index.html">トップ</a></li>
+   <li class="active"><a href="personal.html">自己紹介</a></li>
+   <li><a href="hobby.html">趣味</a></li>
+    
+    <!--
     <input class="linksite" type="button" value="トップ" onclick="location.href='index.html'">
     <input class="linksite" type="button" value="自己紹介" onclick="location.href='personal.html'">
     <input class="linksite" type="button" value="趣味" onclick="location.href='hobby.html'">
+    -->
+    
   </nav>
+
+  <header>
+          <div class="img-circular">
+          
+          <img src="images/kouta.jpg" height="80" width="80" style="border: radius">   
+          
+          <div class="container-fluid">
+    <div class="bio">
+          <p>中野皓太。</p><p>１９９５年に東京都八王子市で生まれ１８歳までそこで育つ。その後、大学のため秋田県で４年間暮らすことになる。</p>
+    </div>
+
+    
+              
+    </div>
+              
+          </div>
+          
+
+    <!-- header：サイトのイントロダクションなどを記述する -->
+    <h1 class="header">自己紹介</h1>
+  </header>
+ <br>
   <article>
-    <h2>（名前を記載）</h2>
     <!-- section：章や節に相当する部分を記述する（何らかのテーマを持つ） -->
     <section>
-      <div class="like">
-        <div>
+    
+     <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+    <div>
           <h2>学校・学部</h2>
-          **大学/学校
         </div>
-        <div>
+      <a target="_blank" href="https://web.aiu.ac.jp/en/">
+        <img src="images/akita.png" alt="AIU" style="width:100%">
+        <div class="caption">
+          <p>国際教養大学　グローバルスタディーズ学科</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+            <div>
           <h2>学校での学習内容</h2>
-          **言語
         </div>
-        <div>
+        
+      <a target="_blank" href="https://en.wikipedia.org/wiki/International_relations">
+        <img src="images/trumpabe.jpg" alt="IR" style="width:100%">
+        <div class="caption">
+          <p>国際関係学部・授業が全て英語である。</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+    <div>
           <h2>職歴（バイト）</h2>
-          **
         </div>
-        <div>
-          <!-- バイトで苦労したこと記述 -->
+      <a target="_blank" href="https://appen.com/">
+        <img src="images/appenlogo.png" alt="appen" style="width:100%">
+        <div class="caption">
+          <p>Appenという会社でリモートで働く。</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+            <div>
           <h2>サークル</h2>
-          **
         </div>
-        <div>
-          <!-- サークルでのエピソード記述 -->
+      <a target="_blank" href="https://parkour.com/">
+        <img src="images/mewtwo.jpg" alt="parkour" style="width:100%">
+        <div class="caption">
+          <p>パルクール - 4年間で左肩を５回脱臼した。</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+    <div>
           <h2>資格</h2>
-          **試験
         </div>
-        <div>
+      <a target="_blank" href="https://www.ets.org/toeic/">
+        <img src="images/qualification.png" alt="toeic" style="width:100%">
+        <div class="caption">
+          <p>TOEIC 990 </p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+    <div>
           <h2>好きなこと</h2>
-          **
         </div>
-        <div>
+      <a target="_blank" href="https://guitar.com/">
+        <img src="images/lespaul.png" alt="guitar" style="width:100%">
+        <div class="caption">
+          <p>ギターを弾くこと </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+    <div>
           <h2>好きな番組・アニメ</h2>
-          **
         </div>
-        <div>
+      <a target="_blank" href="https://hiphop.abematimes.com/pages/861386/freestyledungeon">
+        <img src="images/freestyle.png" alt="freestyle-abema" style="width:100%">
+        <div class="caption">
+          <p>AbemaTVのフリースタイルダンジョン</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+    <div>
           <h2>好きなチーム</h2>
-          **
         </div>
-        <div>
+      <a target="_blank" href="https://www.youtube.com/user/teamfarang">
+        <img src="images/faranglogo.png" alt="team farang" style="width:100%">
+        <div class="caption">
+          <p>パルクールなら Team Farang </p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+    <div>
           <h2>自慢話</h2>
-          **
         </div>
-        <div>
+      
+        <img src="images/hello.png" alt="hello" style="width:100%">
+        <div class="caption">
+          <p>英語ペラペラです。 </p>
+        </div>
+      
+    </div>
+  </div>
+</div> 
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+    <div>
           <h2>今年の抱負</h2>
-          **
         </div>
-        <div>
-          <h2>一生のうちにやってみたいこと</h2>
-          **
+      <a target="_blank" href="https://github.com/">
+        <img src="images/programming.png" alt="github" style="width:100%">
+        <div class="caption">
+          <p>プログラミングで職に就きたい。 </p>
         </div>
-      </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+    <div>
+          <h2>一生のうちにやってみたい</h2>
+        </div>
+      <a target="_blank" href="https://www.youtube.com/watch?v=XjQ9AMn9LgI">
+        <img src="images/tricking.png" alt="Triple Cork" style="width:100%">
+        <div class="caption">
+          <p>トリプルコークスクリュー</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div> 
+    
+      
     </section>
   </article>
   <footer>
     <!-- 自分の名前(orニックネーム)を記載する(mynameを変更) -->
-    <p>Copyright © 2017 myname All Rights Reserved.</p>
+    <p>Copyright © 2019 Kouta All Rights Reserved.</p>
   </footer>
 </body>
 </html>
