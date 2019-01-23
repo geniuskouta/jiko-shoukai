@@ -56,6 +56,18 @@ var DropItem = function() {
        }
        return horizontal_pos;
      }
+     
+     
+     this.wind = function(w_width, w_margin) {
+        horizontal_pos += 30;
+        if (w_width - w_margin <= horizontal_pos){
+          horizontal_pos = w_margin;         
+        }
+        swing_degree = 0;
+        horizontal_center_pos = horizontal_pos;
+        return horizontal_pos;
+     }
+      
 
 }
 
@@ -73,12 +85,27 @@ function fallingDrops() {
   var num_items = 0;
   var max_items = 1;
   var Items = [];
-
-
+  
+  var wind_timer = 0;
+  var windFlag = 0;
+  
   function moveAnime() {
     window = $("body");
     w_height = window.height();
     w_width = window.width();
+ 
+ 
+    //windTimer
+    if(wind_timer <= 0){
+      wind_timer = Math.floor(Math.random()*200)+100;
+    }
+    
+    wind_timer --;
+    if(wind_timer <= 30) {
+      windFlag = 1;
+    }else{
+      windFlag = 0;
+    }
     
         
     if (num_items < max_items) {
@@ -101,9 +128,17 @@ function fallingDrops() {
         $(elem).css("background", Items[index].getPict());
       }
       $(elem).css("top", vpos+"px");
-      $(elem).css("left", Items[index].swing()+"px");
+    
+      if(windFlag == 0){
+        $(elem).css("left", Items[index].swing()+"px");
+      }else{
+        $(elem).css("left", Items[index].wind(w_width, w_margin)+"px");
+      }
+      
+      
     });
   };
+  
   
   setInterval(moveAnime, 100);
   document.onkeydown = keydown;
@@ -114,10 +149,8 @@ function fallingDrops() {
         max_items++;
       }
     }
-    
+
   };
-
-
 
 }
 
