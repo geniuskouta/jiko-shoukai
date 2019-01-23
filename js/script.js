@@ -11,6 +11,9 @@ var DropItem = function() {
     //揺れ方
     var swing_width = 0;
     var swing_degree = 90;
+    //写真配列
+    var pict = ["url(images/pnd.png)", "url(images/8bitheart.png)", "url(images/doggo.gif)", "url(images/drop.png)"];
+    var select = 0;
 
     //再設定
     this.reset = function(w_height, w_width, w_margin) {
@@ -24,7 +27,14 @@ var DropItem = function() {
         //揺れ方速度の速いものは少なく、遅いものは大きく揺らす
         swing_width = 30 - speed*3;
         swing_degree = 0;
-        return vertical_pos;
+        //[0-3]の写真を指定
+        select = Math.floor(Math.random()*4);
+        return vertical_pos;  
+    }
+    
+    //写真を選ぶ
+    this.getPict = function() {
+      return pict[select];
     }
 
      //落下処理
@@ -64,10 +74,12 @@ function fallingDrops() {
   var max_items = 1;
   var Items = [];
 
+
   function moveAnime() {
     window = $("body");
     w_height = window.height();
     w_width = window.width();
+    
         
     if (num_items < max_items) {
       var new_item = document.createElement('div');
@@ -76,14 +88,17 @@ function fallingDrops() {
       parent.appendChild(new_item);
       var new_drop = new DropItem();
       new_drop.reset(w_height, w_width, w_margin);
+      $(new_item).css("background", new_drop.getPict());
       Items.push(new_drop);
       num_items++;
+      
     }
         
     $(".drop").each(function(index, elem) {
       var vpos = Items[index].fall(w_height);
       if (vpos > w_height) {
         vpos = Items[index].reset(w_height, w_width, w_margin);
+        $(elem).css("background", Items[index].getPict());
       }
       $(elem).css("top", vpos+"px");
       $(elem).css("left", Items[index].swing()+"px");
@@ -99,7 +114,6 @@ function fallingDrops() {
         max_items++;
       }
     }
-
     
   };
 
