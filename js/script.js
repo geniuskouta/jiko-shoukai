@@ -89,7 +89,21 @@ function fallingDrops() {
       $(elem).css("left", Items[index].swing()+"px");
     });
   };
+  
   setInterval(moveAnime, 100);
+  document.onkeydown = keydown;
+  function keydown(e){
+    var key = e.keyCode;
+    if (max_items <= 20) {
+      if (key == 33) {
+        max_items++;
+      }
+    }
+
+    
+  };
+
+
 
 }
 
